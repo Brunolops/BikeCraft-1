@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Playfair Display SC", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  position: relative;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+}
+div {
+  display: block;
+}
+
+/* main conteudo */
+.container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+li a {
+  color: black;
+  background-color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.image-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.description {
+  display: grid;
+  grid-row: 1;
+  background: white;
+  padding: 40px;
+  text-align: right;
+  gap: 20px;
+  align-items: flex-end;
+  align-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
+
+.introducao {
+  position: relative;
+  display: grid;
+  grid-column: 1;
+  justify-items: end;
+}
+/* conteudo  */
+.teco {
+  background-color: white;
+  padding: 40px;
+  cursor: pointer;
+}
+
+.teco2-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.teco2-item p {
+  grid-column: 2;
+}
+
+.introducao a {
+  position: relative;
+  background-color: #e21;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  place-self: end;
+}
+
+.introducao a:hover {
+  background-color: #a00303;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-bar a {
+  font-size: 1rem;
+}
+.nav-bar a:hover {
+  border: 2px solid #e21;
+  transition: 0.2s;
+}
+
+.teco2-item:hover {
+  border-left: 3px solid #e21;
+  transition: 0.2s;
+}
+
+h3:hover {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #e21;
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .teco {
+    max-width: 400px;
+  }
+  .teco2-item p {
+    font-size: 20px;
+  }
+  .container {
+    max-width: 400px;
+  }
+
+  .description {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .nav-bar a {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
